@@ -1,3 +1,8 @@
+.material-icons-outlined,
+.material-icons.material-icons--outlined {
+  font-family: 'Material Icons Outlined';
+}
+
 .title {
     font-weight: bolder;
     color: white;
@@ -11,16 +16,97 @@
 }
 
 .white-bar {
+    align-items: center;
     background-color: white;
+    display: flex;
     min-height: 100vh;
-    width: 100px;
-    text-align: center; 
+    flex-direction: column;
     vertical-align: middle;
+    width:10em;
 }
 
-.icon {
+.icon1 {
+    margin-top: 13em;
+    align-items: center;
+    display: flex;
     color: #CD3B20;
-    margin: 30px;
+    flex-direction: column;
 }
 
+.icon2 {
+    padding-top: 2em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #CD3B20;
+}
 
+.sidebar-text {
+    color: grey;
+    margin: 15px;
+}
+
+.panel {
+    background-color: #fff;
+    margin: 30px;
+    margin-right: 0;
+    flex-basis: 1;
+    width: 100%;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.panel:last-child {
+    margin-right: 40px;
+}
+
+.panel-title {
+    color: #CD3B20;
+}
+
+.category-title {
+    color: grey;
+    font-size: 15px;
+}
+
+.expenses {
+    background-color: #ffffff;
+}
+
+.input-wrap {
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+}
+
+.category {
+    text-align:center;
+}
+
+.MuiPaper-rounded {
+    height: 7.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiPaper-rounded Button {
+    height: 7.5em;
+    width: 7.5em;
+}
+
+.MuiButton-label {
+    text-transform: capitalize;
+    font-family: 'Barlow';
+    font-size:16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiSvgIcon-root {
+    margin-bottom: 5px;
+    transform: scale(1.6);
+}
