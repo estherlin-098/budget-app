@@ -6,8 +6,8 @@
 .title {
     font-weight: bolder;
     color: white;
-    font-size: 3em;
-    margin: 200px 0 0 50px;
+    font-size: 3rem;
+    margin: 11rem 0 0 30px;
 }
 
 .App {
@@ -21,12 +21,14 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    vertical-align: middle;
     width:10em;
 }
 
+.white-bar-wrapper {
+    margin-top: 12rem;
+}
+
 .icon1 {
-    margin-top: 13em;
     align-items: center;
     display: flex;
     color: #CD3B20;
@@ -92,14 +94,14 @@
 }
 
 .MuiPaper-rounded Button {
-    height: 7.5em;
-    width: 7.5em;
+    height: 100%;
+    width: 100%;
 }
 
 .MuiButton-label {
     text-transform: capitalize;
     font-family: 'Barlow';
-    font-size:16px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,4 +111,30 @@
 .MuiSvgIcon-root {
     margin-bottom: 5px;
     transform: scale(1.6);
+}
+
+.MuiGrid-spacing-xs-3 {
+    margin:0px;
+}
+
+.save-button {
+    width:100%;
+    background-color: #CD3B20;
+    height: 3em;
+    border: none;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    font-family:'Barlow';
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight:900px;
+}
+
+.save-button:hover {
+    background-color: rgb(211, 72, 47);
+    cursor: pointer;
+}
+
+.save-button:disabled {
+    background-color: rgb(179, 51, 28);
 }
