@@ -60,9 +60,8 @@ body,html,#root {
 
 .panel {
     background-color: #fff;
-    margin: 30px;
+    margin: 40px;
     margin-right: 0;
-    flex-basis: 1;
     width: 100%;
     border-radius: 30px;
     padding: 35px;
@@ -166,9 +165,11 @@ body,html,#root {
 }
 
 .entry-line {
-    display: flex;
+    display: grid;
+    grid-row: auto;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-top: 1em;
+    border-bottom: solid 1px #9B9B9B;
 }
 
 .entry-section {

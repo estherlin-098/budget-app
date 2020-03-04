@@ -215,7 +215,7 @@ function Entries({items}) {
       <div className="category-title">
           <h3>Time</h3> 
           <h3>Category</h3> 
-          <h3>Cost</h3>
+          <h3>Cost $</h3>
       </div>
       
     <div>
