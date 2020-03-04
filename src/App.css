@@ -2,6 +2,16 @@
 .material-icons.material-icons--outlined {
   font-family: 'Material Icons Outlined';
 }
+body,html,#root {
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0;
+    height:100vh;
+    
+}
 
 .title {
     font-weight: bolder;
@@ -55,20 +65,25 @@
     flex-basis: 1;
     width: 100%;
     border-radius: 30px;
-    padding: 30px;
+    padding: 35px;
 }
 
 .panel:last-child {
     margin-right: 40px;
+    max-height:calc(100vh - 120px);
+    overflow:scroll;
 }
 
 .panel-title {
     color: #CD3B20;
+    margin:0px 0px 10px 0px;
 }
 
 .category-title {
     color: grey;
     font-size: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .expenses {
@@ -138,3 +153,32 @@
 .save-button:disabled {
     background-color: rgb(179, 51, 28);
 }
+
+.entry-text {
+    font-size: 24px;
+    margin:0px 0px 1em 0px;
+}
+
+.entry-amount {
+    font-size: 24px;
+    margin:0px 0px 1em 0px;
+    color:#CD3B20;
+}
+
+.entry-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.entry-section {
+    overflow-y: scroll;
+}
+
+.line {
+    height: 1px;
+    color:#9B9B9B;
+    width:100%;
+}
+
+
