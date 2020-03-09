@@ -10,6 +10,7 @@ import { Button } from '@material-ui/core';
 
 function App() {
   const [savedItems, setSavedItems] = useState([])
+
   return (
     <div className="App">
       <Sidebar />
@@ -204,9 +205,13 @@ function Grids({onSelect, category}) {
 }
 
 function Entries({items}) {
-  const today = new Date();
+  let arr = items
+  const today = new Date()
+  const sum = arr.reduce(function(result, item){
+  return Number(result) + Number(item.number);}, 0);
 
   return (
+    <>
     <div className="panel entries">
       <h2 className="panel-title">
         {today.getMonth()+1}/{today.getDate()}<br />
@@ -217,6 +222,7 @@ function Entries({items}) {
           <h3>Category</h3> 
           <h3>Cost $</h3>
       </div>
+    
     <div>
       {items.map(item=>{
         return <div className="entry-section">
@@ -233,8 +239,17 @@ function Entries({items}) {
           </div>
         </div>
       })}
+      <div className="total">
+      <h6 className="total-t">
+        Total:
+      </h6>
+      <h6 className="total-n">
+        {sum}
+      </h6>
+      </div>
     </div>
     </div>
+    </>
   );
 }
 

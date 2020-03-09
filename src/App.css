@@ -71,9 +71,8 @@ body,html,#root {
     margin-right: 40px;
     max-height:calc(100vh - 120px);
     overflow-y:scroll;
+    overflow:hidden;
 }
-
-
 
 .panel-title {
     color: #CD3B20;
@@ -170,7 +169,6 @@ body,html,#root {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    /* justify-content: space-between; */
     margin-top: 1.5em;
     border-bottom: solid 1px #9B9B9B;
 }
@@ -192,7 +190,23 @@ body,html,#root {
     justify-self: end;
 }
 
+.total {
+    display:grid;
+    font-size: 35px;
+    position: relative;
+    bottom:0.8em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap:3.5em;
+}
 
+.total .total-t {
+    grid-column-start: 2;
+}
+
+.total-n {
+    color:#CD3B20;
+}
 .line {
     height: 1px;
     color:#9B9B9B;
