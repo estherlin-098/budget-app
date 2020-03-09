@@ -196,7 +196,7 @@ body,html,#root {
     position: relative;
     bottom:0.8em;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    justify-items: right;
     grid-gap:3.5em;
 }
 
